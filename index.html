@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tugas Kelompok 3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>CRUD Data</h1>
+
+  <form id="crud-form">
+    <input type="hidden" id="id" />
+    <input type="text" id="nama" placeholder="Nama" required />
+    <input type="text" id="instansi" placeholder="Instansi" required />
+    <input type="text" id="keperluan" placeholder="Keperluan" required />
+    <input type="datetime-local" id="waktu" required />
+    <button type="submit">Simpan</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nama</th>
+        <th>Instansi</th>
+        <th>Keperluan</th>
+        <th>Waktu</th>
+        <th>Aksi</th>
+      </tr>
+    </thead>
+    <tbody id="data-table">
+      <!-- Data akan dimuat di sini -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
